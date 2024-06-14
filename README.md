@@ -2,8 +2,7 @@
 ASSIGNMNET
 
 Database Configuration
-	
-* Ensure you have MySQL installed on your system.
+	* Ensure you have MySQL installed on your system.
 		
 	$db_host = 'localhost';
 	$db_name = 'task';
