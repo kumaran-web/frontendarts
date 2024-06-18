@@ -14,8 +14,8 @@ $users_list = $user_obj->get_users_list($page);
 	<div class="mt-3">
 		<h1>Data Table</h1>
 		
-		<!--<div class="">-->
-			<table id="usersTable" class="table table-striped nowrap display table-responsive" style="width:100%">
+		<div class="table-responsive">
+			<table id="usersTable" class="table table-striped nowrap display" style="width:100%">
 				<thead>
 					<tr>
 						<th>User ID</th>
@@ -84,7 +84,7 @@ $users_list = $user_obj->get_users_list($page);
 				?>
 				</tbody>
 			</table>
-		<!--</div>-->
+		</div>
 	</div>
 
 <?php

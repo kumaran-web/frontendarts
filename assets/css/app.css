@@ -67,3 +67,9 @@ div.dtr-modal div.dtr-modal-close{
         left: 290px; /* Position when sidebar is expanded */
     }
 }
+
+@media (max-width: 98px) {
+    .table-responsive {
+	    overflow-x: visible;
+	}
+}
