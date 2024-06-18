@@ -31,7 +31,7 @@
 }
 
 .table-responsive {
-	overflow-x: auto;
+    overflow-x: auto;
 }
 
 div.dtr-modal div.dtr-modal-close{
@@ -39,16 +39,31 @@ div.dtr-modal div.dtr-modal-close{
 	font-size: 33px;
 }
 
-@media (max-width: 992px) {
-	.sidebar {
-		transform: translateX(-100%);
-		width: 280px;
-	}
-	.sidebar.collapsed {
-		transform: translateX(0);
-	}
-	.content {
-		margin-left: 0;
-	}
-}
 
+@media (max-width: 992px) {
+    .sidebar {
+        transform: translateX(-100%);
+        width: 280px;
+    }
+
+    .sidebar.collapsed {
+        transform: translateX(0);
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .content.expanded {
+        margin-left: 280px;
+    }
+
+    #toggleSidebar {
+        left: 10px; /* Initial position */
+        transition: left 0.3s ease-in-out; /* Smooth transition for left position */
+    }
+
+    .sidebar.collapsed #toggleSidebar {
+        left: 290px; /* Position when sidebar is expanded */
+    }
+}
