@@ -11,7 +11,7 @@ $users_list = $user_obj->get_users_list($page);
 
 ?>
 
-	<div class="mt-3">
+	<div class="container-fluid mt-3">
 		<h1>Data Table</h1>
 		
 		<div class="table-responsive">

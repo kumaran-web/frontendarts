@@ -18,7 +18,7 @@ include "config.php";
 
     <!-- DataTables CSS -->
     <link href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/responsive/3.0.2/css/responsive.bootstrap5.css" rel="stylesheet">
+    <!--<link href="https://cdn.datatables.net/responsive/3.0.2/css/responsive.bootstrap5.css" rel="stylesheet">-->
     
     <link href="assets/css/app.css?v=<?=rand()?>" rel="stylesheet">
 </head>

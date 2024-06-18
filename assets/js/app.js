@@ -5,20 +5,26 @@ $(document).ready(function() {
 	});
     
 	if($('#usersTable').length > 0){
+		// $('#usersTable').DataTable({
+		// 	responsive: {
+		// 					details: {
+		// 						display: $.fn.dataTable.Responsive.display.modal({
+		// 							header: function (row) {
+		// 								var data = row.data();
+		// 								return 'Details for ' + data[1] + ' ' + data[2];
+		// 							}
+		// 						}),
+		// 						renderer: $.fn.dataTable.Responsive.renderer.tableAll({
+		// 							tableClass: 'table'
+		// 						})
+		// 					}
+		// 				}
+		// });
+		
 		$('#usersTable').DataTable({
-			responsive: {
-							details: {
-								display: $.fn.dataTable.Responsive.display.modal({
-									header: function (row) {
-										var data = row.data();
-										return 'Details for ' + data[1] + ' ' + data[2];
-									}
-								}),
-								renderer: $.fn.dataTable.Responsive.renderer.tableAll({
-									tableClass: 'table'
-								})
-							}
-						}
+			responsive: true,
+    		scrollX: true,
+    		autoWidth: false
 		});
 	}
 });
